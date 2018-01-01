@@ -898,7 +898,7 @@ impl Connection {
         Ok(Connection{
             ctxt: ctxt,
             handle: handle,
-            tag: OdpiStr::new(conn_param.outTag, conn_param.outTagLength).to_string(),
+            tag: OdpiStr::new(param.outTag, param.outTagLength).to_string(),
             tag_found: conn_param.outTagFound != 0,
         })
     }
